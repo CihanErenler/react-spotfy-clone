@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logo.svg";
 import { useGlobalContext } from "../context";
 import SideLink from "./SideLink";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const { links } = useGlobalContext();
@@ -10,7 +11,9 @@ function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="logo-wrapper">
-        <img src={logo} alt="spotify" />
+        <Link to="/">
+          <img src={logo} alt="spotify" />
+        </Link>
       </div>
       <section className="links">
         {links.map((link, index) => {
