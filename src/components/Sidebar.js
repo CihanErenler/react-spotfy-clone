@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../assets/logo.svg";
 import { useGlobalContext } from "../context";
 import SideLink from "./SideLink";
 import { Link } from "react-router-dom";
 
 function Sidebar() {
-  const { links } = useGlobalContext();
-  const [active, setActive] = useState(0);
+  const { links, active, setActive } = useGlobalContext();
 
   return (
     <aside className="sidebar">

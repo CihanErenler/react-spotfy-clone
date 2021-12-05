@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useGlobalContext } from "../context";
 
 function HomePage() {
+  const { setActive } = useGlobalContext();
+  setActive(0);
+  useEffect(() => {}, []);
+
   return (
-    <div>
-      <h1>This is home page</h1>
+    <div className="page">
+      <h1 className="page-title">Home</h1>
     </div>
   );
 }

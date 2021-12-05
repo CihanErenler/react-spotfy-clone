@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
   --color-bg: #030303;
   --color-white: #fff;
   --color-light-gray: #818181;
-  --color-active: #66D36E;
-  --transition: all .3s ease;
+  --color-active: #66d36e;
+  --transition: all 0.3s ease;
 }
 
 /* Reset */
@@ -17,10 +17,9 @@
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'Montserrat',
-  sans-serif;
-
+html,
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* General */
@@ -42,12 +41,12 @@ a {
 }
 
 .logo-wrapper {
-  padding: 25px ;
+  padding: 25px;
   display: inline-block;
   width: 100%;
 }
 
-.logo-wrapper  a {
+.logo-wrapper a {
   display: block;
   width: 130px;
 }
@@ -61,19 +60,19 @@ a {
   height: 40px;
   width: 100%;
   position: relative;
-  color:var(--color-light-gray) ;
+  color: var(--color-light-gray);
   display: block;
   font-weight: 600;
   /* margin-bottom: 20px; */
   display: flex;
   align-items: center;
   padding: 0 20px;
-  transition:var(--transition) ;
+  transition: var(--transition);
 }
 
 .sidebar-link.active {
   color: var(--color-white);
-  transition:var(--transition);
+  transition: var(--transition);
 }
 
 .sidebar-link.active::before {
@@ -89,4 +88,17 @@ a {
 .sidebar-icon {
   font-size: 26px;
   margin-right: 15px;
+}
+
+.page {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(31, 73, 92),
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.page-title {
+  color: var(--color-white);
+  font-weight: 800;
 }
