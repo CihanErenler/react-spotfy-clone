@@ -2,7 +2,7 @@ import React from "react";
 
 function LibraryPage() {
   return (
-    <div>
+    <div className="page">
       <h1>Librarypage</h1>
     </div>
   );
