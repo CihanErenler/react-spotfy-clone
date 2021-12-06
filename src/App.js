@@ -7,6 +7,7 @@ import PlaylistPage from "./pages/PlaylistPage";
 import LibraryPage from "./pages/LibraryPage";
 import ErrorPage from "./pages/ErrorPage";
 import SearchPage from "./pages/SearchPage";
+import MusicPlayer from "./components/MusicPlayer";
 import React from "react";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/playlist/:id" element={<PlaylistPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <MusicPlayer />
       </Router>
     </Container>
   );
