@@ -1,14 +1,18 @@
 import React, { useEffect } from "react";
 import { useGlobalContext } from "../context";
+import MusicRow from "../components/MusicRow";
 
 function HomePage() {
-  const { setActive } = useGlobalContext();
-  setActive(0);
-  useEffect(() => {}, []);
+  const { setActive, getCurrentTime } = useGlobalContext();
+
+  useEffect(() => {
+    setActive(0);
+  }, []);
 
   return (
     <div className="page">
-      <h1 className="page-title">Home</h1>
+      <h1 className="page-title">{getCurrentTime()}</h1>
+      {/* <MusicRow /> */}
     </div>
   );
 }
