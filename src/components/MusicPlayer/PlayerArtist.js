@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cover from "../assets/album-covers/1.jpg";
+import cover from "../../assets/album-covers/1.jpg";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
 function PlayerArtist() {

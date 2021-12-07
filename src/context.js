@@ -15,8 +15,11 @@ const getCurrentTime = () => {
 
 export const AppProvider = ({ children }) => {
   const [active, setActive] = useState(0);
+  const [playingNow, setPlayingNow] = useState(1);
   return (
-    <AppContext.Provider value={{ links, active, setActive, getCurrentTime }}>
+    <AppContext.Provider
+      value={{ links, active, setActive, getCurrentTime, playingNow }}
+    >
       {children}
     </AppContext.Provider>
   );

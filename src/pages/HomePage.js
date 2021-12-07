@@ -11,8 +11,11 @@ function HomePage() {
 
   return (
     <div className="page">
-      <h1 className="page-title">{getCurrentTime()}</h1>
-      {/* <MusicRow /> */}
+      <div className="container">
+        <h1 className="page-title">{getCurrentTime()}</h1>
+        <MusicRow />
+        <MusicRow />
+      </div>
     </div>
   );
 }

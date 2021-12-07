@@ -7,7 +7,7 @@ import PlaylistPage from "./pages/PlaylistPage";
 import LibraryPage from "./pages/LibraryPage";
 import ErrorPage from "./pages/ErrorPage";
 import SearchPage from "./pages/SearchPage";
-import MusicPlayer from "./components/MusicPlayer";
+import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
 import React from "react";
 
 function App() {
